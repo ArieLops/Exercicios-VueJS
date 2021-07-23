@@ -7,8 +7,12 @@
 </head>
 <body>
     <div id="app">
-        <input type="text" v-model="texto" />
-        <span>{{texto}}</span>
+        <span>{{numero1}}+{{numero2}} =</span>
+        <input type="text" v-model="resultado" />
+        </br>
+        </br>
+        <div v-if="numero1+numero2 == parseInt(resultado)">ACERTÔ MIZERÁVI</div>
+        <div v-if="resultado != 0 && numero1+numero2 != parseInt(resultado)">ERROOOOOOOOOOOOOOOOOOOU!!!</div>
     </div>
     <script src="script.js"></script>
 </body>
